@@ -23,10 +23,10 @@ This script uses the bamaddrg package to add read group (RG) tags to input BAM f
 
 2. Generate bamaddrg commands
 
-`bash bamaddrg_cmds_generator.sh`
+	`bash bamaddrg_cmds_generator.sh`
 
 User will be asked to confirm before proceeding to running them.
 
 3. (Optional) Commands will be saved in run_cmds.sh, which can be later modified freely by user. To directly run the script:
 
-`bash run_cmds.sh`
+	`bash run_cmds.sh`
