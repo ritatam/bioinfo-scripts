@@ -1,29 +1,5 @@
 #!/bin/bash
 
-
-# This script uses the bamaddrg package to add read group (RG) tags to input BAM files,
-# and streams tagged BAM output (.rg.bam). Running this script (bamaddrg_cmds_generator.sh)
-# generates a list of bamaddrg commands for all samples, and saves them into run_cmds.sh in
-# the same directory. Commands will be printed on screen. User will be asked to confirm
-# before proceeding to running them.
-
-
-# Before running this script:
-
-# - bamaddrg must have been installed in the environment.
-
-# - The input directory should contain subdirectories named as your samples, each containing a
-#   corresponding BAM alignment file.
-
-# - If there are replicates, subdirectory (sample) names must be followed by "_n",
-#   and all samples/conditions must have the same number of replicates.
-#   Alignments from separate bam will be tagged with read group id (e.g. gs_1, gs_2, 0_dpi_1, 
-#   0_dpi_2, 3_dpi_1, 3_dpi_2) and the corresponding sample name (gs, 0_dpi, 3_dpi).
-
-# - If there is no replicate, alignments will be tagged with read group id (gs, 0_dpi, 3_dpi)
-#   and sample name (gs, 0_dpi, 3_dpi).
-
-
 ########## set up ##########
 working_dir="/media/hardDrive-02/rita/Pst_rnaToGenome/script"
 input_dir="/media/hardDrive-02/rita/Pst_rnaToGenome/20210504/RNAseq_genome_map"
