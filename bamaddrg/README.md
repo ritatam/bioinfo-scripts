@@ -9,7 +9,7 @@ This script uses the bamaddrg package to add read group (RG) tags to input BAM f
 
 - The input directory should contain subdirectories named as your samples, each containing a corresponding BAM alignment file. Filename must match subdirectory name exactly except the .bam suffix.
 
-- If there are replicates, subdirectory (sample) names must be followed by "_n", and all samples/conditions must have the same number of replicates. Alignments from separate BAMs will be tagged with read group id (e.g. gs_1, gs_2, 0_dpi_1, 0_dpi_2, 3_dpi_1, 3_dpi_2) and the corresponding sample name (gs, 0_dpi, 3_dpi).
+- If there are replicates, subdirectory (sample) names must be followed by "_n" where n refers to replicate number. Alignments from separate BAMs will be tagged with read group id (e.g. gs_1, gs_2, 0_dpi_1, 0_dpi_2, 3_dpi_1, 3_dpi_2) and the corresponding sample name (gs, 0_dpi, 3_dpi).
 
 - If there is no replicate, alignments will be tagged with read group id (gs, 0_dpi, 3_dpi) identical to sample name (gs, 0_dpi, 3_dpi).
 
